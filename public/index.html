@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <!--navbar-->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#home" class="font-bold text-2xl text-primary block py-6">Portofolio</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <!-- Tombol Menu -->
+                    <button id="menu-button" type="button" class="lg:hidden block absolute right-4 text-3xl">
+                        <ion-icon name="menu" id="menu-icon" class="text-black dark:text-white"></ion-icon>
+                    </button>
+
+                    <!-- Navbar -->
+                    <nav id="nav-menu"
+                        class="hidden lg:flex absolute lg:static py-5 lg:py-0 bg-white lg:bg-transparent shadow-lg lg:shadow-none rounded-lg max-w-[250px] lg:max-w-none w-full lg:w-auto right-4 top-full lg:top-auto dark:bg-dark lg:dark:bg-transparent">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="#home"
+                                    class="text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-primary dark:text-white flex">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="#about"
+                                    class="text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-primary dark:text-white flex">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="#portofolio"
+                                    class="text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-primary dark:text-white flex">Portofolio</a>
+                            </li>
+                            <li class="group">
+                                <a href="#skills"
+                                    class="text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-primary dark:text-white flex">Skill</a>
+                            </li>
+                            <li class="group">
+                                <a href="#contact"
+                                    class="text-base text-dark py-2 mx-8 lg:mx-4 group-hover:text-primary dark:text-white flex">Contact</a>
+                            </li>
+                            <li class="flex items-center pl-8">
+                                <button id="dark-mode-button" class="flex items-center cursor-pointer">
+                                    <ion-icon name="moon-outline" class="text-black dark:hidden"
+                                        style="font-size: 24px;"></ion-icon>
+                                    <ion-icon name="sunny-outline" class="hidden text-white dark:block"
+                                        style="font-size: 24px;"></ion-icon>
+                                </button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!--navbar end-->
+
+    <!--hero section start-->
+    <section id="home" class="pt-36 dark:bg-dark">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full self-center px-4  lg:w-1/2 mt-10">
+                    <h1 class="text-base font-semibold text-primary md:text-xl">Hallo Semua, Saya <span
+                            class=" block font-bold text-dark  dark:text-white text-4xl mt-1 lg:text-5xl">Ramadani</span>
+                    </h1>
+                    <h2 class="font-medium text-slate-500 text-lg mb-5 mt-2 lg:text-xl">Mahasiswa</h2>
+                    <p class="font-medium text-slate-400 mb-10 mt-[-10px]">Mari kreasikan dan wujudkan website impian
+                        anda!</p>
+
+                    <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full 
+                     hover:shadow-lg hover:opacity-80">Hubungi Saya</a>
+                </div>
+
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative -mt-10 lg:-mt-12 lg:right-0">
+                        <img src="/image/foto.png" alt="profile"
+                            class="max-w-full mx-auto h-96 contrast-100 relative z-10 top-[-20px] left-1 -translate-y-1">
+                        <span
+                            class="absolute bottom-[-50px] left-1/2 -translate-x-[50%] -translate-y-[50%] md:scale-125 filter dark:drop-shadow-[0_4px_15px_rgba(255,255,255,0.7)]">
+                            <svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                                <path fill="#14b8a6" d="M55.4,-53.4C69.5,-41.3,77,-20.6,77.4,0.4C77.8,21.5,71.1,42.9,57,59.2C42.9,75.4,21.5,86.5,2,84.5C-17.5,82.5,-34.9,67.5,-47.1,51.2C-59.3,34.9,
+                                    -66.2,17.5,-66.7,-0.5C-67.2,-18.4,-61.2,-36.8,-49,-48.9C-36.8,-61,-18.4,
+                                    -66.7,1.1,-67.8C20.6,-68.9,41.3,-65.4,55.4,-53.4Z"
+                                    transform="translate(100 100) scale(1.1)" />
+                            </svg>
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--hero section end-->
+
+    <!--about-->
+    <section id="about" class="pt-36 pb-32 dark:bg-dark">
+        <div class="container">
+            <div class="flex flex-wrap items-start">
+                <!-- Bagian Tentang Saya -->
+                <div class="w-full lg:w-1/2 px-4 mb-10 ">
+                    <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
+                    <h2 class="block font-bold text-dark text-xl mt-1 dark:text-white">Yuk, kreasikan Web anda bersama
+                        kami</h2>
+                    <p class="text-sm text-second mt-2">
+                        Hai! Saya adalah seorang web developer yang berdedikasi untuk menciptakan desain website yang
+                        unik dan fungsional. Dengan keahlian <br>di bidang front-end, saya siap membantu mewujudkan
+                        website impian Anda.
+
+                    </p>
+                </div>
+
+                <!-- Bagian Mari Hubungi -->
+                <div class="w-full lg:w-1/2 px-4">
+                    <h3 class="font-bold text-primary text-lg mb-3">Mari Hubungi</h3>
+                    <p class="text-sm text-second">Terima kasih telah mengunjungi website saya! Jika Anda memiliki
+                        pertanyaan, ingin berdiskusi tentang proyek,
+                        atau membutuhkan bantuan dalam membangun website, jangan ragu untuk menghubungi saya melalui
+                        salah satu cara berikut:
+                    </p>
+
+                    <div class="flex items-center mt-5">
+                        <!-- YouTube Icon -->
+                        <a href="https://github.com/ramadanramad" target="_blank"
+                            class="w-9 h-9 mr-3 rounded-full flex items-center justify-center bg-gray-100"
+                            aria-label="YouTube">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+                                <title>GitHub</title>
+                                <path
+                                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                            </svg>
+                        </a>
+
+                        <!--wa-->
+                        <a href="https://wa.me/62881027331451" target="_blank"
+                            class="w-9 h-9 mr-3 rounded-full flex items-center justify-center bg-gray-100"
+                            aria-label="WhatsApp">
+                            <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                                <title>WhatsApp</title>
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                            </svg>
+                        </a>
+
+
+                        <!--twit-->
+                        <a href="https://www.instagram.com/rmdnram_/" target="_blank"
+                            class="w-10 h-10 mr-3 rounded-full flex items-center justify-center bg-gray-100"
+                            aria-label="Instagram">
+                            <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-6 h-6">
+                                <title>Instagram</title>
+                                <path fill="currentColor"
+                                    d="M349.33 69.33H162.67A93.34 93.34 0 0069.33 162.67v186.66A93.34 93.34 0 00162.67 442.67h186.66A93.34 93.34 0 00442.67 349.33V162.67A93.34 93.34 0 00349.33 69.33zm64 279.56a64.07 64.07 0 01-64 64H162.67a64.07 64.07 0 01-64-64V162.67a64.07 64.07 0 0164-64h186.66a64.07 64.07 0 0164 64zm-32-186.29a23.65 23.65 0 11-23.65-23.65 23.64 23.64 0 0123.66 23.65zM256 164a92 92 0 1092 92 92.1 92.1 0 00-92-92zm0 152a60 60 0 1160-60 60.07 60.07 0 01-60 60z" />
+                            </svg>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--about end-->
+
+    <!--prtofolio-->
+    <section id="portofolio" class="pt-36 pb-32 bg-slate-100 dark:bg-dark">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-10">
+                    <h2 class="font-bold text-3xl text-primary mb-2 -mt-15">Portofolio</h2>
+                    <p class=" text-sm text-second mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                        Quasi minima ipsa mollitia.</p>
+                </div>
+
+                <div class="w-full px-4 justify-center flex flex-wrap">
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div
+                            class="rounded-md shadow-md overflow-hidden filter dark:drop-shadow-[0_4px_15px_rgba(255,255,255,0.7)]">
+                            <img src="/image/image 17.png" alt="Landing page" width="w-full">
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Landing Page E-Commerce
+                        </h3>
+                        <p class="text-sm text-second mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempore blanditiis nemo quidem!</p>
+                    </div>
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div
+                            class="rounded-md shadow-md overflow-hidden filter dark:drop-shadow-[0_4px_15px_rgba(255,255,255,0.7)]">
+                            <img src="/image/image 18.png" alt="Landing page" width="w-full">
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Landing Page Logistic</h3>
+                        <p class="text-sm text-second mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempore blanditiis nemo quidem!</p>
+                    </div>
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div
+                            class="rounded-md shadow-md overflow-hidden filter dark:drop-shadow-[0_4px_15px_rgba(255,255,255,0.7)]">
+                            <img src="/image/image 19.png" alt="Landing page" width="w-full">
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">UI/UX Designer</h3>
+                        <p class="text-sm text-second mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempore blanditiis nemo quidem!</p>
+                    </div>
+                    <div class="mb-12 p-4 md:w-1/2">
+                        <div
+                            class="rounded-md shadow-md overflow-hidden filter dark:drop-shadow-[0_4px_15px_rgba(255,255,255,0.7)]">
+                            <img src="/image/image.png" alt="Landing page" width="w-full">
+                        </div>
+                        <h3 class="font-semibold text-xl text-dark mt-5 mb-3 dark:text-white">Mobile Apps</h3>
+                        <p class="text-sm text-second mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Tempore blanditiis nemo quidem!</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+    <!--portofolio end-->
+
+    <!--tools-->
+    <section id="skills" class="pt-36 pb-32 bg-slate-700 dark:bg-dark">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="mx-auto text-center mb-16">
+                    <h1 class="font-semibold text-3xl text-primary mb-2 -mt-10">My Skills</h1>
+                    <p class=" text-sm text-white mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <div
+                    class="mx-auto mt-14 grid max-w-xl grid-cols-4 items-center justify-center gap-x-8 gap-y-10 sm:max-w-2xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5">
+                    <img class="col-span-2 max-h-16 w-full bject-contain lg:col-span-1 filter dark:drop-shadow-[0_4px_15px_rgba(255,255,255,0.7)]"
+                        src="/image/figma-1-logo-svgrepo-com.svg" alt="Figma Logo" width="250" height="75">
+                    <img class="col-span-2 max-h-16 w-full object-contain lg:col-span-1 filter dark:drop-shadow-[0_4px_15px_rgba(255,255,255,0.7)]"
+                        src="/image/html-5-svgrepo-com.svg" alt="HTML5 Logo" width="250" height="75">
+                    <img class="col-span-2 max-h-16 w-full object-contain lg:col-span-1 filter dark:drop-shadow-[0_4px_15px_rgba(255,255,255,0.7)]"
+                        src="/image/css-3-svgrepo-com.svg" alt="CSS3 Logo" width="250" height="75">
+                    <img class="col-span-2 max-h-16 w-full object-contain lg:col-span-1 filter dark:drop-shadow-[0_4px_15px_rgba(255,255,255,0.7)]"
+                        src="/image/tailwind-svgrepo-com.svg" alt="Tailwind CSS Logo" width="250" height="75">
+                    <img class="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1 filter dark:drop-shadow-[0_4px_15px_rgba(255,255,255,0.7)]"
+                        src="/image/flutter-svgrepo-com.svg" alt="Statamic" width="250" height="75">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--end-->
+
+    <!--contact-->
+    <section id="contact" class="pt-36 pb-32 bg-white dark:bg-dark">
+        <div class="container">
+            <div class="w-full px-4">
+                <div class="max-w-xl mx-auto text-center mb-10">
+                    <h1 class="font-semibold text-3xl text-primary mb-2 -mt-10">Contact</h1>
+                    <p class="text-sm text-second mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+
+                <form id="contactForm" class="mx-auto mt-16 max-w-xl sm:mt-20">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                        <div>
+                            <label for="first-name" class="block text-sm/6 font-semibold text-gray-900 dark:text-white">
+                                First name
+                            </label>
+                            <div class="mt-2.5">
+                                <input type="text" name="first-name" id="first-name" autocomplete="given-name"
+                                    class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-teal-300">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="last-name" class="block text-sm/6 font-semibold text-gray-900 dark:text-white">
+                                Last name
+                            </label>
+                            <div class="mt-2.5">
+                                <input type="text" name="last-name" id="last-name" autocomplete="family-name"
+                                    class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-teal-300">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="email" class="block text-sm/6 font-semibold text-gray-900 dark:text-white">
+                                Email
+                            </label>
+                            <div class="mt-2.5">
+                                <input type="email" name="email" id="email" autocomplete="email"
+                                    class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-teal-300">
+                            </div>
+                        </div>
+                        <div class="sm:col-span-2">
+                            <label for="message" class="block text-sm/6 font-semibold text-gray-900 dark:text-white">
+                                Message
+                            </label>
+                            <div class="mt-2.5">
+                                <textarea name="message" id="message" rows="4"
+                                    class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-teal-300"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-10">
+                        <button type="button" id="sendButton"
+                            class="block w-full rounded-md bg-teal-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-teal-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--end-->
+
+    <!--footer-->
+    <footer class="bg-slate-900 pt-16 pb-12 dark:bg-dark">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap justify-between">
+                <!-- Logo dan Kontak -->
+                <div class="w-full mb-12 md:w-1/3">
+                    <h2 class="font-bold text-3xl text-white mb-5">Ramadani</h2>
+                    <p class="text-base text-slate-300">alexanderramadan@gmail.com</p>
+                    <p class="text-base text-slate-300">Jl. Abdul Rochim 01, Gresik</p>
+                    <div class="mt-4">
+                        <h3 class="font-semibold text-white mb-2">Ikuti Kami</h3>
+                        <div class="flex items-center mt-5">
+                            <!-- YouTube Icon -->
+                            <a href="https://github.com/ramadanramad" target="_blank"
+                                class="w-9 h-9 mr-3 rounded-full flex items-center justify-center bg-gray-100"
+                                aria-label="YouTube">
+                                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6">
+                                    <title>GitHub</title>
+                                    <path
+                                        d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                                </svg>
+                            </a>
+    
+                            <!--wa-->
+                            <a href="https://wa.me/62881027331451" target="_blank"
+                                class="w-9 h-9 mr-3 rounded-full flex items-center justify-center bg-gray-100"
+                                aria-label="WhatsApp">
+                                <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                                    <title>WhatsApp</title>
+                                    <path
+                                        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                                </svg>
+                            </a>
+    
+    
+                            <!--twit-->
+                            <a href="https://www.instagram.com/rmdnram_/" target="_blank"
+                                class="w-10 h-10 mr-3 rounded-full flex items-center justify-center bg-gray-100"
+                                aria-label="Instagram">
+                                <svg role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-6 h-6">
+                                    <title>Instagram</title>
+                                    <path fill="currentColor"
+                                        d="M349.33 69.33H162.67A93.34 93.34 0 0069.33 162.67v186.66A93.34 93.34 0 00162.67 442.67h186.66A93.34 93.34 0 00442.67 349.33V162.67A93.34 93.34 0 00349.33 69.33zm64 279.56a64.07 64.07 0 01-64 64H162.67a64.07 64.07 0 01-64-64V162.67a64.07 64.07 0 0164-64h186.66a64.07 64.07 0 0164 64zm-32-186.29a23.65 23.65 0 11-23.65-23.65 23.64 23.64 0 0123.66 23.65zM256 164a92 92 0 1092 92 92.1 92.1 0 00-92-92zm0 152a60 60 0 1160-60 60.07 60.07 0 01-60 60z" />
+                                </svg>
+                            </a>
+                        </div>                                                                    
+                    </div>
+                </div>
+    
+                <!-- Project -->
+                <div class="w-full mb-12 md:w-1/3">
+                    <h3 class="font-bold text-xl text-white mb-5">Project</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#portofolio" class="text-slate-300 hover:text-white transition">Landing Page E-Commerce</a></li>
+                        <li><a href="#portofolio" class="text-slate-300 hover:text-white transition">Landing Page Logistic</a></li>
+                        <li><a href="#portofolio" class="text-slate-300 hover:text-white transition">UI/UX Designer</a></li>
+                        <li><a href="#portofolio" class="text-slate-300 hover:text-white transition">Mobile Apps</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Tautan -->
+                <div class="w-full mb-12 md:w-1/3">
+                    <h3 class="font-bold text-xl text-white mb-5">Tautan</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-slate-300 hover:text-white transition">Home</a></li>
+                        <li><a href="#about" class="text-slate-300 hover:text-white transition">Tentang Saya</a></li>
+                        <li><a href="#portofolio" class="text-slate-300 hover:text-white transition">Portofolio</a></li>
+                        <li><a href="#contact" class="text-slate-300 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="mt-10 border-t border-slate-700 pt-5">
+                <p class="text-center text-sm text-slate-400">&copy; 2025 Ramadani. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!--end-->
+
+
+    <script src=" /dist/script.js"></script>
+
+</body>
+
+</html>
